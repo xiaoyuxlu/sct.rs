@@ -16,6 +16,9 @@
         unused_import_braces,
         unused_extern_crates,
         unused_qualifications)]
+#![cfg_attr(not(test), no_std)]
+extern crate alloc;
+use alloc::vec::Vec;
 
 /// Describes a CT log
 ///
